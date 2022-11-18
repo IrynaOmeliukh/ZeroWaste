@@ -20,8 +20,10 @@
 require 'simplecov'
 SimpleCov.start 'rails'
 
-require 'simplecov-cobertura'
-SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+if ENV['CI']
+  require 'simplecov-cobertura'
+  SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+end
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
