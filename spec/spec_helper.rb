@@ -21,8 +21,8 @@ require 'simplecov'
 SimpleCov.start 'rails'
 
 if ENV['CI']
-  require 'simplecov-cobertura'
-  SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 
 RSpec.configure do |config|
