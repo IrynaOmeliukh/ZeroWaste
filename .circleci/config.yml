@@ -102,4 +102,3 @@ jobs:
       - run:
           name: Run tests
           command: bundle exec rake
-      - codecov/upload
