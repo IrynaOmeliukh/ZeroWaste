@@ -1,7 +1,6 @@
 version: 2.1
 
 orbs:
-  codecov: codecov/codecov@3
   heroku: circleci/heroku@1.2.6
   ruby: circleci/ruby@1.6.0
   node: circleci/node@5.0.2
