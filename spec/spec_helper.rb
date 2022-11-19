@@ -20,10 +20,9 @@
 require 'simplecov'
 SimpleCov.start 'rails'
 
-if ENV['CI']
-  require 'codecov'
-  SimpleCov.formatter = SimpleCov::Formatter::Codecov
-end
+require 'codecov'
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
+
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
