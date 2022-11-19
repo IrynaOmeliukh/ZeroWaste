@@ -72,6 +72,7 @@ jobs:
     environment:
       BUNDLE_JOBS: "3"
       BUNDLE_RETRY: "3"
+      CODECOV_TOKEN: '5d53b6c6-b156-472a-beb5-f4305341f362'
       PGHOST: 127.0.0.1
       PGUSER: postgres
       PGPASSWORD: ""
